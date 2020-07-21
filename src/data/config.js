@@ -2,7 +2,7 @@ module.exports = {
   defaultTitle: 'Elshanx',
   logo: 'https://portfolio.smakosh.com/favicon/favicon-512.png',
   author: 'Elshan Akbarov',
-  url: 'https://elshax.github.io',
+  url: 'https://elshanx.github.io',
   legalName: 'Elshan Akbarov',
   defaultDescription: 'I’m Elshan and I’m a Front-end developer!',
   socialLinks: {
