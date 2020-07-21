@@ -23,7 +23,7 @@ module.exports = {
   address: {
     city: 'Baku',
     region: 'Region',
-    country: 'Aze',
+    country: 'Azerbaijan',
     zipCode: 'ZipCode',
   },
   contact: {
