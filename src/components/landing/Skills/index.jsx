@@ -12,13 +12,14 @@ export const Skills = () => {
     <Wrapper id="about">
       <SkillsWrapper as={Container}>
         <Thumbnail>
-          <img src={dev} alt="I’m John and I’m a Backend & Devops engineer!" />
+          <img src={dev} alt="I’m Elshan and I’m a Front-end developer!" />
         </Thumbnail>
         <Details theme={theme}>
           <h1>More about me</h1>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry’s standard dummy.
+            I'm a self-taught front-end developer with a strong interest in projects that require both conceptual and
+            analytical thinking, looking for a full-time job in order to enhance my skills and gain more experience and
+            knowledge.
           </p>
           <Button as={AnchorLink} href="#contact">
             Hire me
