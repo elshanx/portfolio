@@ -11,7 +11,6 @@ export default () => (
       name: '',
       email: '',
       message: '',
-      recaptcha: '',
       success: false,
     }}
     validationSchema={Yup.object().shape({
@@ -45,7 +44,7 @@ export default () => (
       }
     }}
   >
-    {({ values, touched, errors, setFieldValue, isSubmitting }) => (
+    {({ values, touched, errors, isSubmitting }) => (
       <Form>
         <InputField>
           <Input
