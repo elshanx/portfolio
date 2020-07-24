@@ -45,8 +45,8 @@ export default () => (
     }}
   >
     {({ values, touched, errors, isSubmitting }) => (
-      <Form>
-        <InputField data-netlify="true">
+      <Form data-netlify="true">
+        <InputField>
           <Input
             as={FastField}
             type="text"
