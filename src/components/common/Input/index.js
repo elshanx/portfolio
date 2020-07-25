@@ -18,4 +18,11 @@ export const Input = styled.input`
   &::placeholder {
     color: #a7a7a7;
   }
+
+  ${({ text }) =>
+    text &&
+    `
+		height: 10rem;
+	`}
+
 `;

@@ -35,7 +35,6 @@ const ContactForm = () => {
     <form
       name="contact"
       method="post"
-      action="/thanks/"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
       onSubmit={handleSubmit}
@@ -67,9 +66,9 @@ const ContactForm = () => {
       </InputField>
       <InputField>
         <Input
+          text
           aria-label="message"
           id="message"
-          rows="8"
           type="textarea"
           name="message"
           placeholder="Message*"
