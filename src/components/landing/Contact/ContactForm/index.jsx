@@ -26,7 +26,7 @@ export default () => (
 
   <form name="website-form" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
     <InputField>
-      <input type="hidden" name="form-name" value="contact" />
+      <input type="hidden" name="website-form" value="contact" />
       <Input type="text" name="name" component="input" aria-label="name" placeholder="Full name*" />
     </InputField>
     <InputField>
