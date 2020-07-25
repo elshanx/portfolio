@@ -40,5 +40,8 @@ export default () => (
         Submit
       </Button>
     </Center>
+    <p hidden>
+      <input name="bot-field" onChange={handleChange} />
+    </p>
   </form>
 );
