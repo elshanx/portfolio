@@ -1,8 +1,6 @@
 import React, { useContext } from 'react';
-// eslint-disable-next-line no-unused-vars
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { ThemeContext } from 'providers/ThemeProvider';
-// eslint-disable-next-line no-unused-vars
 import { Container, Button } from 'components/common';
 import dev from 'assets/illustrations/skills.svg';
 import { Wrapper, SkillsWrapper, Details, Thumbnail } from './styles';
@@ -23,10 +21,10 @@ export const Skills = () => {
             analytical thinking, looking for a full-time job in order to enhance my skills and gain more experience and
             knowledge.
           </p>
-          {/* <Button as={AnchorLink} href="#contact">
-            Hire me
-          </Button> */}
-          {/* to do: link the button */}
+          {<Button as={AnchorLink} href="#contact">
+            Contact Me
+          </Button>}
+
         </Details>
       </SkillsWrapper>
     </Wrapper>

@@ -1,7 +1,16 @@
 import React, { useState } from 'react';
 import { navigate } from 'gatsby-link';
-import { Button, Input } from 'components/common';
+import { Button, Input, TextInput } from 'components/common';
 import { Center, InputField } from './styles';
+
+// Todos: validate inputs
+
+console.log(`%c
+    I see that you've found my 'secret' message. 
+    and also, I know the forms aren't validated. I'll fix it later. (maybe)
+`, 'color: #bada55')
+
+// Add /thanks/ page
 
 function encode(data) {
   return Object.keys(data)
@@ -27,7 +36,10 @@ const ContactForm = () => {
         ...state,
       }),
     })
-      .then(() => navigate(form.getAttribute('action')))
+      .then(() => {
+        navigate(form.getAttribute('action'))
+        alert('Your message has been successfully sent, I will get back to you ASAP.')
+      })
       .catch(error => alert(error));
   };
 
@@ -65,11 +77,11 @@ const ContactForm = () => {
         />
       </InputField>
       <InputField>
-        <Input
-          text
+        <TextInput
+          rows="8"
           aria-label="message"
           id="message"
-          type="textarea"
+          type="email"
           name="message"
           placeholder="Message*"
           onChange={handleChange}
