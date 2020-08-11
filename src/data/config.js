@@ -4,7 +4,7 @@ module.exports = {
   author: 'Elshan Akbarov',
   url: 'https://elshanx.netlify.app',
   legalName: 'Elshan Akbarov',
-  defaultDescription: 'I’m Elshan and I’m a Front-end developer!',
+  defaultDescription: 'I’m Elshan and I’m a Front-end developer',
   socialLinks: {
     twitter: 'https://twitter.com/ElshanAkbarov',
     github: 'https://github.com/elshanx',
