@@ -8,7 +8,7 @@ module.exports = {
   socialLinks: {
     twitter: 'https://twitter.com/ElshanAkbarov',
     github: 'https://github.com/elshanx',
-    linkedin: 'https://www.linkedin.com/in/elshan-akbarov-6b01911b0/',
+    linkedin: 'https://www.linkedin.com/in/elshanx/',
     instagram: 'https://www.instagram.com/elshanx/',
   },
   themeColor: '#6b63ff',
