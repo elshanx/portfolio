@@ -1,6 +1,8 @@
 # Portfolio redesign — design
 
-Status: draft, awaiting approval. Date: 2026-11-19.
+Status: approved 2026-11-25. Date: 2026-11-19.
+
+Visual reference: Figma file "Portfolio 2026" (https://www.figma.com/design/NkGz3RF8JwxuZ3AfUCJyhz), frame "Home — Desktop (Light)". The mobile frame is unverified and the case study was not drawn; build those directly in code. Figma work stopped at the Starter plan's MCP limit; code is now the source of truth.
 
 ## Intent
 
@@ -61,7 +63,11 @@ Builder's calls (Elshan can override):
 - Cutover: build on a `redesign` branch, never on `master`. Vercel preview deploys are the review surface. Merge to `master` only at cutover, then retire Netlify. Reason: the live site is `elshanx.netlify.app`; if Netlify auto-builds `master`, a half-built Next.js app or the removed GitHub token would break the live portfolio. The Netlify wiring cannot be verified from the repo.
 - Frontpage is presented as built from a Frontend Mentor brief, extended into a full product (auth, database, keyboard-first reader). This is the builder's reading of "it's a fem project"; the README describes an original product, so Elshan should confirm the framing.
 - Qaqash is unfinished: its card and case-study page carry an "in progress" status, consistent with the anti-goal above.
-- Fonts: self-hosted variable grotesque (builder picks a free one close to the reference), `font-display: swap`, preloaded.
+- Fonts: Geist (headings, body) and Geist Mono (uppercase labels), self-hosted via the `geist` package or `next/font`.
+- Tokens (from Figma): light bg #E9E9E6, surface #DCDCD8, surface-strong #CFCFCA, text #0F0F0E, muted #62625D, line #C4C4BE, accent #C8F34B (on-accent #0F0F0E); dark bg #0F0F0E, surface #1B1B1A, surface-strong #262624, text #EDEDEA, muted #8F8F89, line #2E2E2C, same accent.
+- Type scale (desktop): name 446px/82% bold, -6% tracking; marquee 128px bold; section titles 72px semibold; card titles 26px; body 20/16px; mono labels 12px uppercase +4%. Scale down fluidly with `clamp()` for mobile (name ~114px at 375).
+- Home order: nav (logo, role, theme toggle, menu pill) → hero (name, intro, 4-cell status strip) → "Selected work" marquee with accent dots → two-column offset project grid (right column starts lower) → timeline (header + filter chips + rows: year / title + description / tags + optional "in progress" badge) → about + contact (link rows) → footer meta row + oversized "elshan®" wordmark.
+- Timeline entries (dates from GitHub): dayaq 2026–now, frontpage 2026, qaqash 2026 (in progress), devclean 2026, budget-tracker 2026 (in progress), gamelog 2026 (in progress), Pasha Bank 2023–now, Frontend Mentor solutions 2023–now, Telegram apartment finder bot 2022, first portfolio 2020.
 
 ## Content inventory
 
