@@ -23,6 +23,7 @@ export interface ProjectMediaInfo {
   tone: MediaTone
   label: string
   src?: string
+  video?: string
   width?: number
   height?: number
 }

@@ -9,7 +9,7 @@ export const frontpage: Project = {
   summary: 'RSS and Atom reader with search, a ranked daily digest and full keyboard control. Started as a Frontend Mentor brief, grown into a real product.',
   stack: ['Next.js 16', 'Prisma 7', 'Better Auth', 'Tailwind 4'],
   inProgress: false,
-  media: { tone: 'surface-strong', label: 'frontpage — reader view' },
+  media: { tone: 'surface-strong', label: 'frontpage — reader view', src: '/work/frontpage.webp', width: 1440, height: 1000 },
   links: [
     { label: 'Live app', href: 'https://frontpage-delta.vercel.app', display: 'frontpage-delta.vercel.app' },
     { label: 'Source', href: 'https://github.com/elshanx/frontpage', display: 'github.com/elshanx/frontpage' },

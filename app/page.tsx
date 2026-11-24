@@ -1,11 +1,11 @@
 import { Hero } from '@/components/hero/Hero'
-import { Marquee } from '@/components/marquee/Marquee'
+import { WorkGrid } from '@/components/work/WorkGrid'
 
 export default function Home() {
   return (
     <main id="main">
       <Hero />
-      <Marquee text="Selected work" id="work-heading" />
+      <WorkGrid />
     </main>
   )
 }

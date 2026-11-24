@@ -1,0 +1,63 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 96px;
+  padding: 96px var(--gutter) 48px;
+}
+
+.column {
+  display: grid;
+  align-content: start;
+  gap: 140px;
+}
+
+.offset {
+  padding-top: 240px;
+}
+
+.note {
+  display: grid;
+  gap: 12px;
+}
+
+.noteLabel {
+  color: var(--muted);
+}
+
+.noteBody {
+  max-width: 44ch;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+@media (max-width: 767px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 56px;
+    padding-top: 40px;
+  }
+
+  .column {
+    display: contents;
+  }
+
+  .offset {
+    padding-top: 0;
+  }
+
+  .first {
+    order: 1;
+  }
+
+  .second {
+    order: 2;
+  }
+
+  .third {
+    order: 3;
+  }
+
+  .last {
+    order: 4;
+  }
+}

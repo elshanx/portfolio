@@ -9,8 +9,8 @@ export const dayaq: Project = {
   summary: 'Marketing site and admin for a home-care service in Azerbaijan. Three languages, edited by the client in a rich-text admin, built to rank in local search.',
   stack: ['Next.js 16', 'Prisma', 'Postgres', 'Playwright'],
   inProgress: false,
-  media: { tone: 'surface', label: 'dayag.az — home page' },
-  links: [{ label: 'Live site', href: 'https://dayag.az', display: 'dayag.az' }],
+  media: { tone: 'surface', label: 'dayaq — home page', src: '/work/dayaq.webp', width: 1440, height: 1000 },
+  links: [{ label: 'Live site', href: 'https://dayaq.vercel.app', display: 'dayaq.vercel.app' }],
   sections: [
     {
       heading: 'Overview',
@@ -33,7 +33,7 @@ export const dayaq: Project = {
     },
     {
       heading: 'Status',
-      paragraphs: ['Live at dayag.az and in active development.'],
+      paragraphs: ['Live and in active development.'],
     },
   ],
 }

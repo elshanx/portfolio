@@ -9,7 +9,7 @@ export const qaqash: Project = {
   summary: 'A macOS notch companion for Claude Code and music. Allow or deny from the notch, see sessions on hover. Runs fully on your Mac.',
   stack: ['Swift 6', 'SwiftUI', 'macOS'],
   inProgress: true,
-  media: { tone: 'inverse', label: 'qaqash — notch demo' },
+  media: { tone: 'inverse', label: 'qaqash — notch demo', src: '/work/qaqash-poster.webp', video: '/work/qaqash.mp4', width: 608, height: 240 },
   links: [{ label: 'Source', href: 'https://github.com/elshanx/qaqash', display: 'github.com/elshanx/qaqash' }],
   sections: [
     {
