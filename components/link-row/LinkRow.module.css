@@ -18,3 +18,10 @@
   text-decoration: underline;
   text-underline-offset: 4px;
 }
+
+@media print {
+  .row {
+    padding: 4px 0;
+    font-size: 11pt;
+  }
+}

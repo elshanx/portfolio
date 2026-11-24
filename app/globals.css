@@ -136,3 +136,30 @@ button {
     translate: 0 32px;
   }
 }
+
+@media print {
+  @page {
+    size: A4;
+    margin: 16mm;
+  }
+
+  :root,
+  :root[data-theme='dark'],
+  :root:not([data-theme='light']) {
+    --bg: #fff;
+    --text: #000;
+    --muted: #444;
+    --line: #ccc;
+  }
+
+  body > header,
+  body > footer,
+  .no-print,
+  .visually-hidden-focusable {
+    display: none !important;
+  }
+
+  .reveal {
+    animation: none !important;
+  }
+}
