@@ -1,0 +1,49 @@
+.pill {
+  padding: 15px 22px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--inverse-bg);
+  color: var(--inverse-text);
+}
+
+.panel {
+  inset: 0 0 0 auto;
+  width: min(480px, 100%);
+  height: 100dvh;
+  max-height: none;
+  margin: 0;
+  padding: clamp(16px, 2vw, 28px) var(--gutter);
+  border: 0;
+  background: var(--inverse-bg);
+  color: var(--inverse-text);
+}
+
+.panel::backdrop {
+  background: rgb(0 0 0 / 0.35);
+}
+
+.close {
+  display: block;
+  margin-left: auto;
+  background: var(--inverse-text);
+  color: var(--inverse-bg);
+}
+
+.list {
+  display: grid;
+  gap: 8px;
+  margin-top: 48px;
+  padding: 0;
+  list-style: none;
+}
+
+.link {
+  font-size: clamp(36px, 6vw, 56px);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+.link:hover {
+  color: var(--accent);
+}

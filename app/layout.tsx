@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import type { ReactNode } from 'react'
 import { Geist, Geist_Mono } from 'next/font/google'
+import { Footer } from '@/components/footer/Footer'
+import { Nav } from '@/components/nav/Nav'
 import { SmoothScroll } from '@/components/smooth-scroll/SmoothScroll'
 import { THEME_SCRIPT } from '@/components/theme/theme-script'
 import './globals.css'
@@ -24,7 +26,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           Skip to content
         </a>
         <SmoothScroll />
+        <Nav />
         {children}
+        <Footer />
       </body>
     </html>
   )

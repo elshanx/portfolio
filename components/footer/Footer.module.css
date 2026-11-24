@@ -1,0 +1,32 @@
+.footer {
+  padding: 0 var(--gutter);
+  overflow: hidden;
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 0;
+  border-top: 1px solid var(--text);
+  color: var(--muted);
+}
+
+.meta a:hover {
+  color: var(--text);
+}
+
+.wordmark {
+  font-size: clamp(88px, 23vw, 330px);
+  font-weight: 700;
+  letter-spacing: -0.06em;
+  line-height: 0.8;
+  white-space: nowrap;
+  margin-bottom: -0.12em;
+}
+
+@media (max-width: 767px) {
+  .built {
+    display: none;
+  }
+}
