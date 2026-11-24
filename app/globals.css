@@ -1,0 +1,138 @@
+@import 'lenis/dist/lenis.css';
+
+:root {
+  --bg: #e9e9e6;
+  --surface: #dcdcd8;
+  --surface-strong: #cfcfca;
+  --text: #0f0f0e;
+  --muted: #62625d;
+  --line: #c4c4be;
+  --inverse-bg: #0f0f0e;
+  --inverse-text: #ededea;
+  --accent: #c8f34b;
+  --on-accent: #0f0f0e;
+  --gutter: clamp(20px, 3.4vw, 48px);
+  color-scheme: light;
+}
+
+:root[data-theme='dark'] {
+  --bg: #0f0f0e;
+  --surface: #1b1b1a;
+  --surface-strong: #262624;
+  --text: #ededea;
+  --muted: #8f8f89;
+  --line: #2e2e2c;
+  --inverse-bg: #ededea;
+  --inverse-text: #0f0f0e;
+  color-scheme: dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --bg: #0f0f0e;
+    --surface: #1b1b1a;
+    --surface-strong: #262624;
+    --text: #ededea;
+    --muted: #8f8f89;
+    --line: #2e2e2c;
+    --inverse-bg: #ededea;
+    --inverse-text: #0f0f0e;
+    color-scheme: dark;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+img,
+video,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+:focus-visible {
+  outline: 2px solid var(--text);
+  outline-offset: 3px;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+.visually-hidden,
+.visually-hidden-focusable:not(:focus) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.visually-hidden-focusable:focus {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  z-index: 100;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: var(--inverse-bg);
+  color: var(--inverse-text);
+}
+
+.mono-label {
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .reveal {
+      animation: reveal linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 60%;
+    }
+  }
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    translate: 0 32px;
+  }
+}
