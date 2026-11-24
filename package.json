@@ -1,64 +1,28 @@
 {
   "name": "portfolio",
+  "version": "0.1.0",
   "private": true,
-  "description": "portfolio",
-  "version": "0.1.2",
-  "author": "",
-  "dependencies": {
-    "axios": "^0.21.1",
-    "dotenv": "^8.2.0",
-    "formik": "^2.1.5",
-    "gatsby": "^2.24.47",
-    "gatsby-image": "^2.4.16",
-    "gatsby-link": "^2.4.13",
-    "gatsby-plugin-canonical-urls": "^2.3.10",
-    "gatsby-plugin-favicon": "^3.1.6",
-    "gatsby-plugin-google-analytics": "^2.3.13",
-    "gatsby-plugin-manifest": "^2.4.23",
-    "gatsby-plugin-nprogress": "^2.3.10",
-    "gatsby-plugin-react-helmet": "^3.3.10",
-    "gatsby-plugin-remove-serviceworker": "^1.0.0",
-    "gatsby-plugin-sharp": "^2.6.27",
-    "gatsby-plugin-sitemap": "^2.4.11",
-    "gatsby-plugin-styled-components": "^3.3.10",
-    "gatsby-source-filesystem": "^2.3.24",
-    "gatsby-source-graphql": "^2.7.1",
-    "gatsby-transformer-sharp": "^2.5.13",
-    "prop-types": "^15.7.2",
-    "react": "^16.13.1",
-    "react-anchor-link-smooth-scroll": "^1.0.12",
-    "react-dom": "^16.13.1",
-    "react-helmet": "^6.1.0",
-    "styled-components": "^5.1.1",
-    "yup": "^0.29.3"
-  },
-  "keywords": [
-    "gatsby",
-    "portfolio",
-    "developer"
-  ],
-  "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
-    "start": "gatsby develop -o",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "reset": "rm -rf .cache/ public/",
-    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+    "test": "node --test \"lib/**/*.test.ts\" \"content/**/*.test.ts\""
+  },
+  "dependencies": {
+    "lenis": "^1.3.28",
+    "next": "16.4.6",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
   },
   "devDependencies": {
-    "babel-plugin-styled-components": "^1.11.1",
-    "eslint": "^7.7.0",
-    "eslint-config-airbnb": "^18.2.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-config-wesbos": "0.0.20",
-    "eslint-plugin-html": "^6.0.3",
-    "eslint-plugin-import": "^2.16.0",
-    "eslint-plugin-jsx-a11y": "^6.2.1",
-    "eslint-plugin-prettier": "^3.0.1",
-    "eslint-plugin-react": "^7.20.6",
-    "eslint-plugin-react-hooks": "^4.0.8",
-    "prettier": "^2.0.5",
-    "yarn-upgrade-all": "^0.5.4"
-  }
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.4.6",
+    "typescript": "^5"
+  },
+  "packageManager": "pnpm@12.11.2",
+  "type": "module"
 }
