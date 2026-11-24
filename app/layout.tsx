@@ -5,12 +5,14 @@ import { Footer } from '@/components/footer/Footer'
 import { Nav } from '@/components/nav/Nav'
 import { SmoothScroll } from '@/components/smooth-scroll/SmoothScroll'
 import { THEME_SCRIPT } from '@/components/theme/theme-script'
+import { siteUrl } from '@/lib/site-url'
 import './globals.css'
 
 const sans = Geist({ variable: '--font-sans', subsets: ['latin'] })
 const mono = Geist_Mono({ variable: '--font-mono', subsets: ['latin'] })
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl(process.env)),
   title: { default: 'Elshan — Front-end engineer', template: '%s — Elshan' },
   description: 'Front-end engineer in Baku building fast, accessible web products.',
 }
