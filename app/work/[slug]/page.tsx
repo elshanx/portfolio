@@ -39,7 +39,7 @@ export default async function CaseStudy({ params }: CaseStudyProps) {
       </header>
       <p className={styles.summary}>{project.summary}</p>
       <CaseMeta project={project} />
-      <ProjectMedia media={project.media} priority />
+      <ProjectMedia media={project.media} priority playable sizes="100vw" />
       <div className={styles.content}>
         {project.sections.map(({ heading, paragraphs }) => (
           <section key={heading} className={styles.section}>

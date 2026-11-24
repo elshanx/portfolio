@@ -14,6 +14,7 @@
   letter-spacing: -0.06em;
   line-height: 0.82;
   margin-left: -0.04em;
+  pointer-events: none;
 }
 
 .introRow {
